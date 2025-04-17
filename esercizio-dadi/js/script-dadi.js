@@ -1,8 +1,6 @@
 // GENERAZIONE NUMERO RANDOM PER GIOCATORE E COMPUTER //
-const lancioDado = () => Math.floor(Math.random() * 6) + 1;
-
-const giocatore = lanciaDado();
-const computer = lanciaDado();
+const giocatore = Math.floor(Math.random() * 6) + 1;
+const computer = Math.floor(Math.random() * 6) + 1;
 
 console.log("giocatore ha tirato:", giocatore);
 console.log("computer ha tirato:", computer);
@@ -14,4 +12,4 @@ if (giocatore > computer) {
   console.log("computer vince");
 } else {
   console.log("pareggio");
-} 
+}
